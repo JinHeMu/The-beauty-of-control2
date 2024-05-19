@@ -154,7 +154,7 @@ int main(int argc, char const *argv[])
 
 
     // 更新代价和系统输入矩阵
-    J_costtogo.row(k) =min_row;
+    J_costtogo.row(k) = colMin;
     Input_acc.row(k) = acc_last_Matrix;
 
 
