@@ -1,4 +1,5 @@
 .vscode
 3rdparty
 build
+**/cmake-build-debug/
 
