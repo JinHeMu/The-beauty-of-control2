@@ -1,6 +1,7 @@
 #include <iostream>
 // Eigen 核心部分
 #include <eigen3/Eigen/Core>
+#include "pangolin/pangolin.h"
 
 int main(int argc, char const *argv[])
 {
@@ -218,10 +219,6 @@ int main(int argc, char const *argv[])
 
     J_costtogo.row(N_h) = J_last;
     Input_acc.row(N_h) = acc_last;
-
-    // 打印结果
-    std::cout << "J_costtogo:\n" << J_costtogo << std::endl;
-    std::cout << "Input_acc:\n" << Input_acc << std::endl;
 
 
     return 0;
